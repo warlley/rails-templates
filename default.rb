@@ -19,6 +19,7 @@ run "cp config/database.yml config/database.yml.sample"
 run "touch tmp/.gitignore log/.gitignore vendor/.gitignore"
 file '.gitignore', <<-END
 .DS_Store
+Thumbs.db
 log/*.log
 tmp/**/*
 config/database.yml
