@@ -27,8 +27,6 @@ db/*.sqlite3
 END
 
 # submoduled plugins
-plugin 'rspec', :git => 'git://github.com/dchelimsky/rspec.git', :submodule => true
-plugin 'rspec-rails', :git => 'git://github.com/dchelimsky/rspec-rails.git', :submodule => true
 plugin 'object_daddy', :git => 'git://github.com/dchelimsky/object_daddy.git', :submodule => true
 plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git', :submodule => true
 plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git', :submodule => true
@@ -41,6 +39,8 @@ gem 'thoughtbot-paperclip', :version => '>=2.2.2', :lib => 'paperclip', :source 
 gem 'mislav-will_paginate', :version => '>=2.3.6', :lib => 'will_paginate', :source => 'http://gems.github.com'
 gem 'authlogic', :version => '>=1.3.9'
 gem 'prawn', :version => '>=0.4.1'
+gem 'rspec', :version => '>=1.2.2', :lib => false
+gem 'rspec-rails', :version => '>=1.2.2', :lib => false
 rake('gems:install', :sudo => true)
 
 # initialize submodules and first git commit
