@@ -31,6 +31,7 @@ plugin 'object_daddy', :git => 'git://github.com/dchelimsky/object_daddy.git', :
 plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git', :submodule => true
 plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git', :submodule => true
 plugin 'prawnto', :git => 'git://github.com/thorny-sun/prawnto.git', :submodule => true
+plugin 'exception_notification', :git => 'git://github.com/rails/exception_notification.git', :submodule => true
 
 # ruby gems
 gem 'haml', :version => '>=2.0.6'
