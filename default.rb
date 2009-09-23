@@ -42,7 +42,7 @@ gem 'authlogic', :version => '>=1.3.9'
 gem 'prawn', :version => '>=0.4.1'
 gem 'rspec', :version => '>=1.2.2', :lib => false
 gem 'rspec-rails', :version => '>=1.2.2', :lib => false
-gem 'justinfrench-formtastic', :lib => 'formtastic', :version => '>=0.2.4'
+gem 'justinfrench-formtastic', :version => '>=0.2.4', :lib => 'formtastic', :source => 'http://gems.github.com'
 rake('gems:install', :sudo => true)
 
 # initialize submodules and first git commit
