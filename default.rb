@@ -32,6 +32,7 @@ plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git', :submodule => t
 plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git', :submodule => true
 plugin 'prawnto', :git => 'git://github.com/thorny-sun/prawnto.git', :submodule => true
 plugin 'exception_notification', :git => 'git://github.com/rails/exception_notification.git', :submodule => true
+plugin 'inploy', :git => 'git://github.com/dcrec1/inploy.git', :submodule => true
 
 # ruby gems
 gem 'haml', :version => '>=2.0.6'
