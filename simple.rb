@@ -29,6 +29,7 @@ END
 # submoduled plugins
 plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git', :submodule => true
 plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git', :submodule => true
+plugin 'inploy', :git => 'git://github.com/dcrec1/inploy.git', :submodule => true
 
 # ruby gems
 gem 'haml', :version => '>=2.0.6'
