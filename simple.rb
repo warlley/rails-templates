@@ -16,7 +16,7 @@ git :add => '.'
 run "cp config/database.yml config/database.yml.sample"
 
 # .gitignore files
-run "touch tmp/.gitignore log/.gitignore vendor/.gitignore"
+run "touch tmp/.gitignore log/.gitignore"
 file '.gitignore', <<-END
 .DS_Store
 Thumbs.db
@@ -27,16 +27,15 @@ db/*.sqlite3
 END
 
 # submoduled plugins
-plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git', :submodule => true
-plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git', :submodule => true
+plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git'
+plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git'
 
 # ruby gems
-gem 'haml', :version => '>=2.0.6'
-gem 'nofxx-annotate', :version => '>=2.2.5', :lib => 'annotate', :source => 'http://gems.github.com'
-gem 'thoughtbot-paperclip', :version => '>=2.2.2', :lib => 'paperclip', :source => 'http://gems.github.com'
-gem 'mislav-will_paginate', :version => '>=2.3.6', :lib => 'will_paginate', :source => 'http://gems.github.com'
-gem 'authlogic', :version => '>=1.3.9'
-gem 'justinfrench-formtastic', :version => '>=0.2.4', :lib => 'formtastic', :source => 'http://gems.github.com'
+gem 'haml', :version => '>=2.2.17'
+gem 'paperclip', :version => '>=2.3.1.1'
+gem 'will_paginate', :version => '>=2.3.12'
+gem 'formtastic', :version => '>=0.9.7'
+gem 'devise', :version => '>=0.8.2'
 rake('gems:install', :sudo => true)
 
 # initialize submodules and first git commit

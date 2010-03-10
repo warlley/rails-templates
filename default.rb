@@ -16,7 +16,7 @@ git :add => '.'
 run "cp config/database.yml config/database.yml.sample"
 
 # .gitignore files
-run "touch tmp/.gitignore log/.gitignore vendor/.gitignore"
+run "touch tmp/.gitignore log/.gitignore"
 file '.gitignore', <<-END
 .DS_Store
 Thumbs.db
