@@ -26,7 +26,7 @@ config/database.yml
 db/*.sqlite3
 END
 
-# submoduled plugins
+# plugins
 plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git'
 plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git'
 
