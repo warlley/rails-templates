@@ -28,10 +28,9 @@ END
 
 # plugins
 plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git'
-plugin 'js.erb-auto-include-plugin', :git => 'git://github.com/warlley/js.erb-auto-include-plugin.git'
+plugin 'autolinkable', :git => 'git://github.com/warlley/autolinkable.git'
 
 # ruby gems
-gem 'haml', :version => '>=2.2.17'
 gem 'paperclip', :version => '>=2.3.1.1'
 gem 'will_paginate', :version => '>=2.3.12'
 gem 'formtastic', :version => '>=0.9.7'
