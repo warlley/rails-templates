@@ -30,6 +30,8 @@ END
 plugin 'jrails', :git => 'git://github.com/aaronchi/jrails.git'
 plugin 'autolinkable', :git => 'git://github.com/warlley/autolinkable.git'
 
+rake('autolinkable:css:generate')
+
 # ruby gems
 gem 'paperclip', :version => '>=2.3.1.1'
 gem 'will_paginate', :version => '>=2.3.12'
